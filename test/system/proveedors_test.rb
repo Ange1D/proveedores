@@ -30,7 +30,7 @@ class ProveedorsTest < ApplicationSystemTestCase
 
   test "should update Proveedor" do
     visit proveedor_url(@proveedor)
-    click_on "Edit this proveedor", match: :first
+    click_on "Editar proveedor", match: :first
 
     check "Pago" if @proveedor.Pago
     fill_in "Apellidomaterno", with: @proveedor.apellidoMaterno

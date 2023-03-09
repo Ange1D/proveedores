@@ -12,46 +12,46 @@
   <% end %>
 
   <div>
-    <%= form.label :razonSocial, style: "display: block" %>
+    <%= form.label :razonSocial, 'Razon Social', style: "display: block" %>
     <%= form.text_field :razonSocial %>
   </div>
 
   <div>
-    <%= form.label :rfc, style: "display: block" %>
+    <%= form.label :rfc, 'RFC', style: "display: block" %>
     <%= form.text_field :rfc %>
   </div>
 
   <div>
-    <%= form.label :nombre, style: "display: block" %>
+    <%= form.label :nombre, 'Nombre', style: "display: block" %>
     <%= form.text_field :nombre %>
   </div>
 
   <div>
-    <%= form.label :apellidoPaterno, style: "display: block" %>
+    <%= form.label :apellidoPaterno, 'Apellido Paterno', style: "display: block" %>
     <%= form.text_field :apellidoPaterno %>
   </div>
 
   <div>
-    <%= form.label :apellidoMaterno, style: "display: block" %>
+    <%= form.label :apellidoMaterno, 'Apellido Materno', style: "display: block" %>
     <%= form.text_field :apellidoMaterno %>
   </div>
 
   <div>
     <%= form.label :correo, style: "display: block" %>
-    <%= form.text_field :correo %>
+    <%= form.email_field  :correo %>
   </div>
 
   <div>
-    <%= form.label :clabe, style: "display: block" %>
-    <%= form.text_field :clabe %>
+    <%= form.label :clabe, 'CLABE', style: "display: block" %>
+    <%= form.number_field :clabe %>
   </div>
 
   <div>
-    <%= form.label :Pago, style: "display: block" %>
+    <%= form.label :Pago, 'Pago Contado', style: "display: block" %>
     <%= form.check_box :Pago %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit "Guardar" %>
   </div>
 <% end %>
